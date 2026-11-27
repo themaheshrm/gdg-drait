@@ -38,7 +38,7 @@ export function SocialLinks({ className, size = 'md', showLabels = false }: { cl
             <span
               title={`${label} link coming soon`}
               className={cn(
-                'inline-flex cursor-default items-center justify-center gap-2 rounded-full border border-dashed border-ink/25 text-ink/45',
+                'inline-flex cursor-default items-center justify-center gap-2 rounded-full border border-dashed border-ink/30 text-ink-muted',
                 showLabels ? 'h-11 px-4 text-sm' : box,
               )}
             >

@@ -31,8 +31,8 @@ export function PageHero({ eyebrow, title, description, accent = 'blue', childre
       <div className="container-site relative grid items-end gap-10 lg:grid-cols-12">
         <motion.div
           className="lg:col-span-8"
-          initial={{ opacity: 0, y: 24 }}
-          animate={{ opacity: 1, y: 0 }}
+          initial={{ y: 16 }}
+          animate={{ y: 0 }}
           transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
         >
           <p className="eyebrow mb-5 inline-flex items-center gap-2 rounded-full border border-ink/10 bg-white px-3 py-1.5">

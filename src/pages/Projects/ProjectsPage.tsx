@@ -56,7 +56,10 @@ export default function ProjectsPage() {
         </Button>
       </PageHero>
 
-      <section aria-label="Project listing" className="container-site pb-24">
+      <section aria-labelledby="project-listing" className="container-site pb-24">
+        <h2 id="project-listing" className="sr-only">
+          Project listing
+        </h2>
         <div className="flex flex-col gap-4 rounded-4xl bg-white p-4 shadow-card sm:p-5 lg:flex-row lg:items-center">
           <label className="relative block lg:w-80 lg:shrink-0">
             <span className="sr-only">Search projects</span>

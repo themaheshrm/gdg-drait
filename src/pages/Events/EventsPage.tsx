@@ -53,7 +53,10 @@ export default function EventsPage() {
         description="Technical workshops, bootcamps, hackathons, guest sessions and community meetups — everything happening at GDG on Campus Dr. AIT."
       />
 
-      <section aria-label="Event listing" className="container-site pb-20 sm:pb-28">
+      <section aria-labelledby="event-listing" className="container-site pb-20 sm:pb-28">
+        <h2 id="event-listing" className="sr-only">
+          Event listing
+        </h2>
         <div className="flex flex-col gap-4 rounded-4xl bg-white p-4 shadow-card sm:p-5">
           <FilterChips label="Filter by time" layoutId="events-when" options={whenOptions} value={when} onChange={(v) => update('when', v, 'upcoming')} />
           <div className="h-px bg-ink/10" />
