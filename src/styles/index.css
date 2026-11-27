@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    -webkit-text-size-adjust: 100%;
+    scroll-padding-top: 6rem;
+  }
+  @media (prefers-reduced-motion: no-preference) {
+    html { scroll-behavior: smooth; }
+  }
+  body {
+    @apply bg-offwhite font-sans text-ink antialiased;
+    font-feature-settings: 'ss01';
+    text-rendering: optimizeLegibility;
+  }
+  ::selection { @apply bg-gblue-pastel text-ink; }
+  :focus-visible {
+    @apply outline-none ring-2 ring-gblue ring-offset-2 ring-offset-offwhite;
+  }
+  h1, h2, h3, h4 { @apply font-sans font-medium tracking-tight; text-wrap: balance; }
+  p { text-wrap: pretty; }
+}
+
+@layer components {
+  .container-site { @apply mx-auto w-full max-w-site px-4 sm:px-6 lg:px-10; }
+  .eyebrow { @apply font-mono text-xs uppercase tracking-[0.18em] text-ink-muted sm:text-[0.8rem]; }
+  .dot-grid {
+    background-image: radial-gradient(rgba(30, 30, 30, 0.12) 1px, transparent 1px);
+    background-size: 22px 22px;
+  }
+  .link-underline {
+    background: linear-gradient(currentColor, currentColor) 0 100% / 0 1.5px no-repeat;
+    transition: background-size 0.3s ease;
+  }
+  .link-underline:hover, .link-underline:focus-visible { background-size: 100% 1.5px; }
+  .no-scrollbar { scrollbar-width: none; }
+  .no-scrollbar::-webkit-scrollbar { display: none; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-marquee, .animate-spin-slow { animation: none; }
+}
