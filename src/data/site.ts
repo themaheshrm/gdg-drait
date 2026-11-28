@@ -19,8 +19,8 @@ export const site = {
   /** PLACEHOLDER: official contact e-mail of the chapter */
   email: null as string | null,
 
-  /** PLACEHOLDER: official membership / registration form link */
-  joinUrl: null as string | null,
+  /** Official membership / registration form link */
+  joinUrl: 'https://gdg.community.dev/gdg-on-campus-dr-ambedkar-institute-of-technology-bengaluru-india/' as string | null,
 
   /** PLACEHOLDER: hero community photo, e.g. '/images/hero/community.jpg' (put file in /public/images) */
   heroImage: null as string | null,
@@ -38,8 +38,8 @@ export const socials: SocialLinks = {
   linkedin: null,
   /** PLACEHOLDER: Instagram profile URL */
   instagram: null,
-  /** PLACEHOLDER: chapter page on gdg.community.dev */
-  gdgCommunity: null,
+  /** Chapter page on gdg.community.dev */
+  gdgCommunity: 'https://gdg.community.dev/gdg-on-campus-dr-ambedkar-institute-of-technology-bengaluru-india/',
 };
 
 /**
